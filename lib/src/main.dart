@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'widgets/expenses.dart';
+import 'package:racha_conta/src/models/signIn.dart';
+//import 'package:racha_conta/src/models/loginScreen.dart';
+//import 'widgets/expenses.dart';
 
 var colorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 96, 59, 181),
@@ -22,7 +23,11 @@ void main() {
   ).then(
     (fn) {
       runApp(
-        MaterialApp(
+        const MaterialApp(
+          home: SignIn(),
+          //LoginScreen(),
+        )
+       /* MaterialApp(
           theme: ThemeData().copyWith(
             useMaterial3: true,
             colorScheme: darkColorScheme,
@@ -48,7 +53,7 @@ void main() {
                 ),
           ),
           home: const Expenses(),
-        ),
+        ),*/
       );
     },
   );

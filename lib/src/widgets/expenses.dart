@@ -98,6 +98,7 @@ class _ExpensesState extends State<Expenses> {
             onPressed: _openAddExpanseOverlay,
             icon: Icon(Icons.add),
           ),
+          IconButton(onPressed: () => {}, icon: Icon(Icons.login),)
         ],
       ),
       body: width < 600
